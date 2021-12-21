@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/WhistleDevelopments/DiscordWhois#readme",
   "dependencies": {
-    "vue": "^2.6.14"
+    "colorfy": "^2.2.0",
+    "vue": "^2.6.14",
+    "wd-lib3": "^1.2.8"
   }
 }
