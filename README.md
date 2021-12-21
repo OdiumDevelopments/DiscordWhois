@@ -1,8 +1,8 @@
 
-# Discord Whois
+# Discord Whois BETA
 **Discord whois lookup for basic user information.**
 
-![Preview of running version](https://cdn.discordapp.com/attachments/754787071717015766/825982291200573441/Screenshot_2021-03-29_073706.png)
+![Preview Not Available (Beta Branch)](#)
 
 
 > FAQ:
@@ -14,8 +14,3 @@
 
 > **Q: Why make such a useless project?**
 > **A: Boredom is the main contributor for me making this project, the design looks decent and it fits perfectly with the goal of the project.**
-
-
-
-
-## Preview Url: https://discordwhois.whistledev.website/
