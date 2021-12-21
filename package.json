@@ -21,10 +21,9 @@
   "homepage": "https://github.com/WhistleDevelopments/DiscordWhois#readme",
   "dependencies": {
     "colorfy": "^2.2.0",
-    "express": "^4.17.2",
     "fs": "^0.0.1-security",
-    "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
+    "vue-tailwind": "^2.5.0",
     "wd-lib3": "^1.2.8"
   },
   "devDependencies": {
