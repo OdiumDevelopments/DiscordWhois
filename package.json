@@ -23,5 +23,8 @@
     "colorfy": "^2.2.0",
     "vue": "^2.6.14",
     "wd-lib3": "^1.2.8"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
   }
 }
