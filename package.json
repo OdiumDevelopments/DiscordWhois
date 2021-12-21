@@ -1,0 +1,25 @@
+{
+  "name": "discordwhois",
+  "version": "1.5.6",
+  "description": "Newly updated discord whois software.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhistleDevelopments/DiscordWhois.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "whistledevelopments",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhistleDevelopments/DiscordWhois/issues"
+  },
+  "homepage": "https://github.com/WhistleDevelopments/DiscordWhois#readme",
+  "dependencies": {
+    "vue": "^2.6.14"
+  }
+}
