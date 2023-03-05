@@ -2,7 +2,6 @@
 # Discord Whois
 **Discord whois lookup for basic user information.**
 
-![Preview of running version](https://cdn.discordapp.com/attachments/754787071717015766/825982291200573441/Screenshot_2021-03-29_073706.png)
 
 
 > FAQ:
@@ -18,4 +17,4 @@
 
 
 
-## Preview Url: https://discordwhois.whistledev.website/
+## Preview Url: Not available.
