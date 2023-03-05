@@ -1,21 +1,30 @@
 <?php
-$bottoken = "your discord bot token";
+define('BOT_TOKEN', 'your discord bot token');
 
-$opts = array(
-    'http'=>array(
-        'method'=>"GET",
-        'header'=>
-        "Accept-language: en\r\n" .
-        "Cookie: foo=bar\r\n" .
-        "Authorization: Bot ".$bottoken.""
-    )
-);
+// Check if results are cached
+$cache_key = 'discord_user_' . $_GET['duid'];
+$discord_results = apc_fetch($cache_key);
 
-$context = stream_context_create($opts);
+if ($discord_results === false) {
+    // Results not in cache, fetch from API
+    $opts = array(
+        'http' => array(
+            'method' => 'GET',
+            'header' => 'Accept-language: en\r\n' .
+                'Cookie: foo=bar\r\n' .
+                'Authorization: Bot ' . BOT_TOKEN
+        )
+    );
 
-// Open the file using the HTTP headers set above
-$file = file_get_contents('https://discord.com/api/users/'.$_GET["duid"], false, $context);
-$discord_results = json_decode($file);
+    $context = stream_context_create($opts);
+
+    $file = file_get_contents('https://discord.com/api/users/' . $_GET['duid'], false, $context);
+    $discord_results = json_decode($file);
+
+    // Cache results for future use
+    apc_store($cache_key, $discord_results, 3600); // 1 hour cache lifetime
+}
+
 
 echo "<!DOCTYPE html>\n";
 echo "<html>\n";
